@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:oua_bootcamp24_flutter26/routes.dart';
+import 'package:oua_bootcamp24_flutter26/screens/SplashScreen/view.dart';
+import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/loginScreen/view.dart';
+import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/signUpScreens/view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      //initialRoute: SplashScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: routes,
     );
   }
