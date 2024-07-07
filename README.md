@@ -4,7 +4,7 @@ Flutter Bootcamp Takım 26
 
 ## Ürün İsmi
 
---Right--
+### **`Right`**
 
 ## Takım Üyeleri ve Rolleri
 - Ömer Faruk Şenol: Scrum Master
@@ -45,44 +45,78 @@ Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gr
 - **Kararsız Kalanlar**: Belirli konularda karar vermekte zorlanan ve topluluğun görüşlerine başvurarak doğru yolu bulmak isteyen kullanıcılar.
 
 ---
+<details>
+<summary><h1>Sprint 1</h1></summary>
 
-# Sprint 1
-
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
-
-
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
-
-
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
-
-- **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/Bootcamp2022Example/main/ProjectManagement/Sprint1Documents/backlog1.png) 
+- **Sprint Notları**: 
+  - Proje yönetimi için `Trello` kullanılması kararlaştırıldı.
+  - UI tasarımları için `Figma` kullanılması kararlaştırıldı.
+  - Proje içerisinde `Provider` tool kullanılması kararlaştırıldı.
+  - `MVVM` yapısı kuruldu ve bu temelde ilerlenmesine karar verildi.
+  - Backend için `Firebase` kullanılması kararlaştırıldı.
+  - Giriş sistemi için `email ile giriş` kullanılması kararlaştırıldı.
+  - Giriş sisteminin ardından `kimlik doğrulama` yapılmasına karar verildi.
 
 
-- **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product1.png)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product2.png)
-  ![Screenshot 3](https://github.com/OyunveUygulamaAkademisi/Bootcamp2022Example/blob/main/ProjectManagement/Sprint1Documents/product4.gif)
+- **Sprint içinde tamamlanması tahmin edilen/tamamlanan puan**: 15/15 Puan. 
+
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 60 puan bulunmaktadır. Ekip üyeleri ilk iki hafta tatile denk gelen yoğunlukları nedeni ile ilk sprintte 15 puan ile başlanması uygun görülmüştür ve proje ağırlığını 2. ve 3. sprinte verme fikrine karar kılınmıştır.
+
+
+- **Daily Scrum**: Daily Scrum toplantıları Whatsapp üzerinden yapılmasına karar verilmiştir. Proje boyunca düzenli olarak google Meet ve Discord üzerinden sesli toplantılar da yapılmıştır:
+  <details>
+    <summary><h3>Daily Scrum Screenshots</h3></summary>
+    <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1515.PNG" style="max-width: 25%; height: auto;">
+    <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1516.PNG" style="max-width: 25%; height: auto;">
+    <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1517.PNG" style="max-width: 25%; height: auto;">
+    <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1518.PNG" style="max-width: 25%; height: auto;">
+    <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1519.PNG" style="max-width: 25%; height: auto;">
+    <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1521.PNG" style="max-width: 25%; height: auto;">
+  </details>
+  
+  <details>
+    <summary><h3>Sprint 1 - App Screenshots</h3></summary>
+  <table style="width: 100%;">
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Login and SignUp Screen</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/Screenshot%202024-07-07%20at%2018.48.04.png" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/Screenshot%202024-07-07%20at%2018.48.11.png" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>
+
+- **Sprint board update**: Sprint board screenshotları:
+  
+  ![Backlog 1](https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/Screenshot%202024-07-07%20at%2020.31.39.png) 
+
+
+- **Ürün Durumu**:
+
 - **Sprint Review**: 
-Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, arduino kurulumu ve firebase'e bağlanması sağlanmış, uygulama için veritabanı olarak firebase servisleri aktif edilmiş ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy
+  - Proje yönetimi için `Trello` kullanılması kararlaştırıldı.
+  - UI tasarımları için `Figma` kullanılması kararlaştırıldı.
+  - `MVVM` yapısı kuruldu ve bu temelde ilerlenmesine karar verildi.
+  - Backend için `Firebase` kullanılması kararlaştırıldı.
+  - Giriş sistemi için `email ile giriş` kullanılması kararlaştırıldı.
+  - Giriş sisteminin ardından `kimlik doğrulama` yapılmasına karar verildi.
+
 
 - **Sprint Retrospective:**
-  - Roller ile ilgili düzenleme yapılmış, scrum master değişmiştir.
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+  - Roller ile ilgili düzenleme yapılmamıştır.
   - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
  
-
-
 ---
 
-## Product Backlog URL
 
-[Flutter Team 26 Miro Backlog Board](https://miro.com/app/board/uXjVO4kRs2w=/)
+</details>
 
----
 
-  - Takım üyelerinin gelecek projelerde daha fazla aktif olması gerektiğine vurgu yapılmıştır.
+
+
+
 
 
 ---
