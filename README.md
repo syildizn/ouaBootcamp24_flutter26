@@ -100,7 +100,7 @@ Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gr
   - Backend ve yoğunluğu fazla olan kısım için Seçkin Yıldız görev aldı.
   - Uygulama ismi kesin olmamakla birlikte `Right` olarak yazıldı, sonradan değiştirilebilir.
   - Grup üyelerinin aynı zamanda müsait olamaması nedeniyle günlük toplantıların whatsapp kanalı ile yapılması planlandı.
-  - Sprint Review Katılımcıları: ` Ömer Faruk Şenol` Özge Ayaz` `Seçkin Yıldız` `Özlem Yılmaz` `Semih Ata Öztürk`
+  - Sprint Review Katılımcıları: ` Ömer Faruk Şenol` `Özge Ayaz` `Seçkin Yıldız` `Özlem Yılmaz` `Semih Ata Öztürk`
 
 
 - **Sprint Retrospective:**
