@@ -1,29 +1,24 @@
 # **Right**
 
-Takım Flutter 26
-
-# Ürün İle İlgili Bilgiler
-
-## Takım Elemanları
-- Ömer Faruk Şenol: Scrum Master
-- Özge Ayaz: Developer
-- Seçkin Yıldız: Developer
-- Özlem Yılmaz: Developer
-- Semih Ata Öztürk: Developer
+Flutter Bootcamp Takım 26
 
 ## Ürün İsmi
 
 --Right--
+
+## Takım Üyeleri ve Rolleri
+- Ömer Faruk Şenol: Scrum Master
+- Özge Ayaz: Product Owner
+- Seçkin Yıldız: Developer
+- Özlem Yılmaz: Developer
+- Semih Ata Öztürk: Developer
 
 ## Product Backlog URL
 
 [Flutter Team 26 Trello Backlog Board](https://trello.com/b/Hg3aJ6eI/flutter26bootcamp)
 
 ## Ürün Açıklaması
-
-# Sprint: Sosyal Medya Uygulaması
-
-Right, insanların haklı ya da haksız olup olmadıklarını belirlemelerine yardımcı olan yenilikçi bir sosyal medya uygulamasıdır. Uygulamanın temel mantığı, kullanıcıların belirli konularda anketler açarak topluluktan geri bildirim alması ve bu geri bildirimlere göre haklı ya da haksız olduklarına karar vermeleridir. 
+Right, insanların haklı ya da haksız olup olmadıklarını belirlemelerine yardımcı olan yenilikçi bir sosyal medya uygulamasıdır. Uygulamanın temel mantığı, kullanıcıların belirli konularda anketler açarak topluluktan geri bildirim alması ve bu geri bildirimlere göre haklı ya da haksız olduklarına karar vermeleridir.
 
 ## Ana Özellikler
 
@@ -42,7 +37,7 @@ Right, kullanıcıların hem bireysel hem de topluluk bazında etkileşimlerini 
 
 ## Hedef Kitle
 
-Sprint, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gruplar için idealdir:
+Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gruplar için idealdir:
 
 - **Gençler ve Genç Yetişkinler**: Özellikle sosyal medyada aktif olan ve topluluk görüşlerine önem veren genç kullanıcılar.
 - **Tartışma Severler**: Belirli konularda fikir alışverişinde bulunmayı ve anketler yoluyla geri bildirim almayı seven kullanıcılar.
