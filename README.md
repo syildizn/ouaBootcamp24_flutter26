@@ -66,7 +66,7 @@ Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gr
 
 - **Daily Scrum**: Daily Scrum toplantıları Whatsapp üzerinden yapılmasına karar verilmiştir. Proje boyunca düzenli olarak google Meet ve Discord üzerinden sesli toplantılar da yapılmıştır:
   <details>
-    <summary><h3>Daily Scrum Screenshots</h3></summary>
+    <summary><h2>Daily Scrum Screenshots</h2></summary>
     <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1515.PNG" style="max-width: 25%; height: auto;">
     <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1516.PNG" style="max-width: 25%; height: auto;">
     <img src="https://github.com/syildizn/oua_bootcamp24_flutter26/blob/main/bootcampFiles/IMG_1517.PNG" style="max-width: 25%; height: auto;">
@@ -76,7 +76,7 @@ Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gr
   </details>
   
   <details>
-    <summary><h3>Sprint 1 - App Screenshots</h3></summary>
+    <summary><h2>Sprint 1 - App Screenshots</h2></summary>
   <table style="width: 100%;">
     <tr>
       <td colspan="4" style="text-align: center;"><h2>Login and SignUp Screen</h2></td>
@@ -96,16 +96,19 @@ Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gr
 - **Ürün Durumu**:
 
 - **Sprint Review**: 
-  - Proje yönetimi için `Trello` kullanılması kararlaştırıldı.
-  - UI tasarımları için `Figma` kullanılması kararlaştırıldı.
-  - `MVVM` yapısı kuruldu ve bu temelde ilerlenmesine karar verildi.
-  - Backend için `Firebase` kullanılması kararlaştırıldı.
-  - Giriş sistemi için `email ile giriş` kullanılması kararlaştırıldı.
-  - Giriş sisteminin ardından `kimlik doğrulama` yapılmasına karar verildi.
+  - Tasarım ve UI kısmı için Özge Ayaz aldı.
+  - Backend ve yoğunluğu fazla olan kısım için Seçkin Yıldız görev aldı.
+  - Uygulama ismi kesin olmamakla birlikte `Right` olarak yazıldı, sonradan değiştirilebilir.
+  - Grup üyelerinin aynı zamanda müsait olamaması nedeniyle günlük toplantıların whatsapp kanalı ile yapılması planlandı.
+  - Sprint Review Katılımcıları: ` Ömer Faruk Şenol` Özge Ayaz` `Seçkin Yıldız` `Özlem Yılmaz` `Semih Ata Öztürk`
 
 
 - **Sprint Retrospective:**
   - Roller ile ilgili düzenleme yapılmamıştır.
+  - İkinci sprintte kodlama kısmında Seçkin Yıldız ve Ömer Şenol ağırlıklı olarak gidilmesi planlandı.
+  - Logo ve İsim değişikliği gündeme getirildi.
+  - Uygulama içerisine eklemek üzere ücretli abonelik sistemleri tartışıldı.
+  - Uygulama içerisine reklam ekleme fikri gündeme getirildi.
   - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
  
 ---
