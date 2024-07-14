@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:oua_bootcamp24_flutter26/widgets/auth_wrapper.dart';
 import 'dart:async';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/signUpScreens/view.dart';
-
-
 
 class SplashScreen extends StatefulWidget {
   static String routeName = 'SplashScreen';
@@ -18,8 +16,11 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
-      Navigator.pushReplacementNamed(context, SignUpScreen.routeName);
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => AuthWrapper()),
+      );
     });
   }
 
@@ -39,7 +40,6 @@ class SplashScreenWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-
           SizedBox(height: 20),
           Container(
             width: 247,
@@ -54,7 +54,7 @@ class SplashScreenWidget extends StatelessWidget {
           Text(
             'RIGHT',
             style: GoogleFonts.markoOne(
-              textStyle: TextStyle(fontSize: 44,color: Color(0xFF6B5297)),
+              textStyle: TextStyle(fontSize: 44, color: Color(0xFF6B5297)),
             ),
           ),
         ],

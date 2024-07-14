@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:oua_bootcamp24_flutter26/screens/HomeScreen/view.dart';
 import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/loginScreen/view.dart';
+import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/signUpScreens/viewModel.dart';
+import 'package:provider/provider.dart';
 
 class SignUpScreen extends StatefulWidget {
   static String routeName = 'SignUpScreen';
@@ -12,15 +15,25 @@ class SignUpScreen extends StatefulWidget {
 class _SignUpScreenState extends State<SignUpScreen> {
   bool _isPasswordVisible = false;
   bool _isPasswordVisible2 = false;
+  final TextEditingController _fullNameController = TextEditingController();
+  final TextEditingController _nicknameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _phoneNumberController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _confirmPasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Column(
-          children: [
-            Container(
+      body: ChangeNotifierProvider(
+        create: (_) => SignUpViewModel(),
+        child: Consumer<SignUpViewModel>(
+          builder: (context, viewModel, child) {
+            return SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                  children: [
+              Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               clipBehavior: Clip.antiAlias,
@@ -71,25 +84,37 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       child: Column(
                         children: [
                           SizedBox(height: 10),
-                          _buildTextField('Enter your full name'),
+                          _buildTextField('Enter your full name', controller: _fullNameController),
                           SizedBox(height: 20),
-                          _buildTextField('Enter your nickname'),
+                          _buildTextField('Enter your nickname', controller: _nicknameController),
                           SizedBox(height: 20),
-                          _buildTextField('Enter your e-mail'),
+                          _buildTextField('Enter your e-mail', controller: _emailController),
                           SizedBox(height: 20),
-                          _buildTextField('Enter your phone number'),
+                          _buildTextField('Enter your phone number', controller: _phoneNumberController),
                           SizedBox(height: 20),
-                          _buildTextField('Enter your password', isPassword: true, isPasswordVisible: _isPasswordVisible, onTogglePasswordVisibility: () {
-                            setState(() {
-                              _isPasswordVisible = !_isPasswordVisible;
-                            });
-                          }),
+                          _buildTextField(
+                            'Enter your password',
+                            isPassword: true,
+                            isPasswordVisible: _isPasswordVisible,
+                            onTogglePasswordVisibility: () {
+                              setState(() {
+                                _isPasswordVisible = !_isPasswordVisible;
+                              });
+                            },
+                            controller: _passwordController,
+                          ),
                           SizedBox(height: 20),
-                          _buildTextField('Enter your password', isPassword: true, isPasswordVisible: _isPasswordVisible2, onTogglePasswordVisibility: () {
-                            setState(() {
-                              _isPasswordVisible2 = !_isPasswordVisible2;
-                            });
-                          }),
+                          _buildTextField(
+                            'Confirm your password',
+                            isPassword: true,
+                            isPasswordVisible: _isPasswordVisible2,
+                            onTogglePasswordVisibility: () {
+                              setState(() {
+                                _isPasswordVisible2 = !_isPasswordVisible2;
+                              });
+                            },
+                            controller: _confirmPasswordController,
+                          ),
                           SizedBox(height: 20),
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
@@ -100,7 +125,38 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               padding: EdgeInsets.symmetric(horizontal: 85, vertical: 3),
                               elevation: 4,
                             ),
-                            onPressed: () {},
+                            onPressed: () async {
+                              String email = _emailController.text;
+                              String password = _passwordController.text;
+                              if (password == _confirmPasswordController.text) {
+                                await viewModel.createUserWithEmailAndPassword(email, password);
+                                if (viewModel.user != null) {
+                                  showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return AlertDialog(
+                                        title: Text('Email Verification'),
+                                        content: Text('A verification email has been sent to your email address. Please verify your email before logging in.'),
+                                        actions: [
+                                          TextButton(
+                                            onPressed: () {
+                                              viewModel.signOut();
+                                              Navigator.of(context).pop();
+                                              Navigator.pushReplacementNamed(context, LoginScreen.routeName);
+                                            },
+                                            child: Text('OK'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                } else {
+                                  // Hata mesajı göster
+                                }
+                              } else {
+                                // Şifreler eşleşmiyor hatası göster
+                              }
+                            },
                             child: Text(
                               'Sign Up',
                               style: TextStyle(
@@ -126,7 +182,28 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                               elevation: 4,
                             ),
-                            onPressed: () {},
+                            onPressed: () async {
+                              await viewModel.signInWithGoogle();
+                              if (viewModel.user != null) {
+                                Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+                              } else {
+                                showDialog(
+                                  context: context,
+                                  builder: (context) {
+                                    return AlertDialog(
+                                      title: Text('Login Failed'),
+                                      content: Text('Google sign-in failed.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () => Navigator.of(context).pop(),
+                                          child: Text('OK'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              }
+                            },
                             icon: Image.asset('assets/images/google.png', width: 24, height: 24),
                             label: Text(
                               'or sign in using with Google',
@@ -159,22 +236,26 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ),
                             ],
-                          )
+                          ),
                         ],
                       ),
                     ),
                   ),
                 ],
-              ),
+              ),)
+              ],
             ),
-          ],
+            );
+
+          },
         ),
       ),
     );
   }
 
-  Widget _buildTextField(String hintText, {bool isPassword = false, bool isPasswordVisible = false, VoidCallback? onTogglePasswordVisibility}) {
+  Widget _buildTextField(String hintText, {bool isPassword = false, bool isPasswordVisible = false, VoidCallback? onTogglePasswordVisibility, TextEditingController? controller}) {
     return TextField(
+      controller: controller,
       obscureText: isPassword && !isPasswordVisible,
       decoration: InputDecoration(
         hintText: hintText,
