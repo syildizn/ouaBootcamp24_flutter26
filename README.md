@@ -18,21 +18,26 @@ Flutter Bootcamp Takım 26
 [Flutter Team 26 Trello Backlog Board](https://trello.com/b/Hg3aJ6eI/flutter26bootcamp)
 
 ## Ürün Açıklaması
-Right, insanların haklı ya da haksız olup olmadıklarını belirlemelerine yardımcı olan yenilikçi bir sosyal medya uygulamasıdır. Uygulamanın temel mantığı, kullanıcıların belirli konularda anketler açarak topluluktan geri bildirim alması ve bu geri bildirimlere göre haklı ya da haksız olduklarına karar vermeleridir.
+Şehir Bilgi Bulmaca Oyunu, kullanıcıların şehirler hakkında bilgi sahibi olmalarını ve bu bilgileri bulmacalar yoluyla test etmelerini sağlayan yenilikçi bir oyundur. Kullanıcılar, belirli şehirler hakkında çeşitli sorular ve bulmacalarla karşılaşır ve bu bulmacaları çözerek puan toplar. Oyun, hem eğitici hem de eğlenceli bir deneyim sunarak kullanıcıların coğrafya bilgilerini geliştirmelerine yardımcı olur.
+
 
 ## Ana Özellikler
 
+### Anket Oluşturma ve Katılım
+- **Bulmaca Oluşturma**: Kullanıcılar, şehirler hakkında bilgi içeren bulmacalar oluşturabilir.
+- **Çözme**: Topluluk üyeleri, bu bulmacaları çözerek bilgi ve becerilerini test edebilir.
+- **Sonuçları Görüntüleme**:  Kullanıcılar, bulmaca sonuçlarına göre kendi başarılarını ve diğer kullanıcıların performansını görebilirler.
 ### Anket Oluşturma ve Katılım
 - **Anket Oluşturma**: Kullanıcılar, tartışmalı ya da kararsız kaldıkları konularda anketler oluşturabilir.
 - **Oy Verme**: Topluluk üyeleri, bu anketlere oy vererek kullanıcıya geri bildirim sağlar.
 - **Sonuçları Görüntüleme**: Anket sonuçlarına göre kullanıcılar, topluluğun genel görüşünü öğrenebilir ve haklı olup olmadıklarına karar verebilirler.
 
 ### Ortak Oda Chatleşme
-- **Chat Odaları**: Kullanıcılar, uygulama içerisindeki özel chat odalarında bir araya gelip sohbet edebilirler.
-- **İlgi Alanları**: Bu odalar, ortak ilgi alanları veya tartışılan anket konuları üzerine odaklanabilir.
-- **Gerçek Zamanlı Sohbet**: Kullanıcılar, gerçek zamanlı olarak fikir alışverişinde bulunabilir ve toplulukla daha derin etkileşimler kurabilirler.
+- **Chat Odaları**: Kullanıcılar, oyun içerisindeki özel chat odalarında bir araya gelip sohbet edebilirler.
+- **İlgi Alanları**: Bu odalar, ortak ilgi alanları veya tartışılan şehir konuları üzerine odaklanabilir.
+- **Gerçek Zamanlı Sohbet**: Kullanıcılar, gerçek zamanlı olarak bilgi alışverişinde bulunabilir ve toplulukla daha derin etkileşimler kurabilirler.
 
-Right, kullanıcıların hem bireysel hem de topluluk bazında etkileşimlerini artırmak ve haklılık/haksızlık konularında topluluk desteği almak için ideal bir platform sunar. Uygulama, kullanıcı dostu arayüzü ve etkili özellikleriyle sosyal medya deneyiminizi bir üst seviyeye taşır.
+Şehir Bilgi Bulmaca Oyunu, kullanıcıların hem bireysel hem de topluluk bazında etkileşimlerini artırmak ve şehir bilgileri konusunda kendilerini geliştirmelerine yardımcı olmak için ideal bir platform sunar. Uygulama, kullanıcı dostu arayüzü ve etkili özellikleriyle eğitici oyun deneyiminizi bir üst seviyeye taşır.
 
 
 ## Hedef Kitle
