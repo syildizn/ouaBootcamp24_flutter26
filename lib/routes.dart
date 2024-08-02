@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:oua_bootcamp24_flutter26/screens/HomeScreen/view.dart';
-import 'package:oua_bootcamp24_flutter26/screens/SplashScreen/view.dart';
-import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/loginScreen/view.dart';
-import 'package:oua_bootcamp24_flutter26/screens/signUpAndLoginScreens/signUpScreens/view.dart';
+import 'screens/SplashScreen/view.dart';
+import 'screens/signUpAndLoginScreens/loginScreen/view.dart';
+import 'screens/signUpAndLoginScreens/signUpScreens/view.dart';
+import 'screens/WordGameScreen/view.dart';
 
-Map<String, WidgetBuilder> routes = {
-
+final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => SplashScreen(),
-  SignUpScreen.routeName: (context)=> SignUpScreen(),
-  LoginScreen.routeName: (context)=> LoginScreen(),
-  HomeScreen.routeName: (context) => HomeScreen(),
+  LoginScreen.routeName: (context) => LoginScreen(),
+  SignUpScreen.routeName: (context) => SignUpScreen(),
+  WordGameScreen.routeName: (context) => WordGameScreen(),
 };

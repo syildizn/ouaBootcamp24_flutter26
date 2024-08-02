@@ -2,11 +2,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:oua_bootcamp24_flutter26/routes.dart';
 import 'package:oua_bootcamp24_flutter26/screens/SplashScreen/view.dart';
+import 'package:oua_bootcamp24_flutter26/screens/WordGameScreen/view.dart';
+import 'package:oua_bootcamp24_flutter26/screens/WordGameScreen/viewmodel.dart';
 import 'package:oua_bootcamp24_flutter26/services/auth_service.dart';
 import 'package:provider/provider.dart';
 import 'firebase_options.dart';
-import 'screens/signUpAndLoginScreens/loginScreen/viewModel.dart';
-import 'screens/signUpAndLoginScreens/signUpScreens/viewModel.dart';
+import 'screens/signUpAndLoginScreens/loginScreen/viewmodel.dart';
+import 'screens/signUpAndLoginScreens/signUpScreens/viewmodel.dart';
 import 'widgets/auth_wrapper.dart';
 
 void main() async {
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => LoginViewModel()),
         ChangeNotifierProvider(create: (_) => SignUpViewModel()),
         ChangeNotifierProvider(create: (_) => AuthService()),
+        ChangeNotifierProvider(create: (context) => WordViewModel()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
