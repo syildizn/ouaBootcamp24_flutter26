@@ -116,7 +116,19 @@ Right, geniş bir kullanıcı kitlesine hitap eder ve özellikle aşağıdaki gr
 
 </details>
 
+<details>
+  <summary><h1>Sprint 2</h1></summary>
+  - **Sprint Notları**: 
+    -Sprint 2 de takımda yeterli zaman ayırılmamış olup büyük bir aksiyon alınmamıştır.
+</details>
 
+<details>
+  <summary><h1>Sprint 3</h1></summary>
+   **Sprint Notları**:
+  -Zaman konusunda yaşanan sorunlar ve projeyi vaktinde tamamlamak adına takım proje fikrini basitleştirmek konusunda hemfikir olmuştur.
+  -Fikir olarak Şehir bilgi oyunu yapılmış ve çalışır bir şekilde pushlanmıştır.
+  
+</details>
 
 
 
